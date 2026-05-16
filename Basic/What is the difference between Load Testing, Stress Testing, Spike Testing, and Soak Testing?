@@ -1,0 +1,155 @@
+Load Testing
+Purpose
+To check how the application performs under expected normal user load.
+Goal
+Verify:
+Response time
+Throughput
+Stability
+Resource usage
+Example
+An ecommerce site normally supports:
+5,000 concurrent users
+We test system with:
+5,000 users
+
+to see whether APIs respond within SLA.
+
+Real-Time Example
+
+During normal shopping traffic:
+
+Login API should respond within 2 sec.
+Key Focus
+Expected traffic
+Normal business load
+Performance benchmark
+2. Stress Testing
+Purpose
+
+To check system behavior beyond its capacity limit.
+
+Goal
+
+Find:
+
+Breaking point
+Failure behavior
+Recovery capability
+Example
+
+System capacity:
+
+5,000 users
+
+We gradually increase:
+
+10,000
+20,000 users
+
+until application crashes or becomes unstable.
+
+Real-Time Example
+
+Big Billion Day sale overload.
+
+Key Focus
+Extreme load
+System crash point
+Recovery after failure
+3. Spike Testing
+Purpose
+
+To check how application handles sudden sharp increase/decrease in traffic.
+
+Goal
+
+Verify:
+
+Auto-scaling
+Stability during traffic spikes
+Recovery speed
+Example
+
+Suddenly increase:
+
+100 users → 10,000 users within seconds
+Real-Time Example
+
+Concert ticket booking opening at 10 AM.
+
+Key Focus
+Sudden traffic burst
+Rapid scaling
+Sudden load changes
+4. Soak Testing (Endurance Testing)
+Purpose
+
+To check system stability over a long duration under continuous load.
+
+Goal
+
+Find:
+
+Memory leaks
+Resource leaks
+Performance degradation over time
+Example
+
+Run:
+
+5,000 users continuously for 24–48 hours
+Real-Time Example
+
+Banking systems running continuously for days.
+
+Key Focus
+Long-duration stability
+Memory leak detection
+Resource exhaustion
+Quick Comparison Table
+Testing Type	Purpose	Load Pattern	Main Goal
+Load Testing	Normal expected load	Gradual/steady	Check performance
+Stress Testing	Beyond capacity	Increasing extreme load	Find breaking point
+Spike Testing	Sudden traffic increase	Instant spike	Check scaling/stability
+Soak Testing	Long duration load	Continuous steady load	Find memory/resource leaks
+Easy Interview One-Line Definitions
+Load Testing
+
+Testing application under expected user load.
+
+Stress Testing
+
+Testing application beyond maximum capacity.
+
+Spike Testing
+
+Testing application with sudden traffic spikes.
+
+Soak Testing
+
+Testing application continuously for long duration.
+
+Real Ecommerce Example
+Scenario	Testing Type
+Daily normal traffic	Load Testing
+Black Friday overload	Stress Testing
+Flash sale at 12 AM	Spike Testing
+48-hour sale event	Soak Testing
+Interview Tip
+
+If interviewer asks:
+
+“Which testing helps detect memory leak?”
+
+Answer:
+
+Soak Testing
+
+If interviewer asks:
+
+“Which testing identifies breaking point?”
+
+Answer:
+
+Stress Testing
